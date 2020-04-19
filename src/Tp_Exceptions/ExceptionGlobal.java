@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
-public class ExceptionExample{
+public class ExceptionGlobal {
     public String eMessage;
     public Date eDate;
     public Integer eLine;
@@ -15,7 +15,7 @@ public class ExceptionExample{
     public String eStr;
     public static Integer eNumber = 0;
 
-    public ExceptionExample(Exception e){
+    public ExceptionGlobal(Exception e){
 
         this.eMessage = e.toString();
         this.eDate = new Date();
@@ -40,7 +40,7 @@ public class ExceptionExample{
             if(e1.getStackTrace()[0].getClassName() != eClass) {
                 System.out.println("its working");
 
-                ExceptionExample saveException = new ExceptionExample(e1);
+                ExceptionGlobal saveException = new ExceptionGlobal(e1);
             }
             else{
                 System.exit(0);

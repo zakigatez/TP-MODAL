@@ -2,9 +2,8 @@ package Tp_Exceptions;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class SerializationExample {
+public class SerializationGlobal {
 
     public static boolean saveSerialized(String path, ArrayList objs){
         try {
@@ -14,7 +13,7 @@ public class SerializationExample {
             os.close();
             fs.close();
         } catch (IOException e) {
-            ExceptionExample saveException = new ExceptionExample(e);
+            ExceptionGlobal saveException = new ExceptionGlobal(e);
             return false;
         }
         return true;
@@ -32,7 +31,7 @@ public class SerializationExample {
         } catch (EOFException e){
             System.out.println("Fin du fichier");
         } catch (IOException | ClassNotFoundException e1) {
-            ExceptionExample saveException = new ExceptionExample(e1);
+            ExceptionGlobal saveException = new ExceptionGlobal(e1);
         }
         return null;
     }

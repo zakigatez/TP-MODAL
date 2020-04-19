@@ -9,9 +9,9 @@ public class ArithmeticTp {
             try {
                 r = Float.valueOf(1 / (k - i));
             } catch (ArithmeticException e) {
-                ExceptionExample saveException = new ExceptionExample(e);
+                ExceptionGlobal saveException = new ExceptionGlobal(e);
             } catch (Exception e) {
-                ExceptionExample saveException = new ExceptionExample(e);
+                ExceptionGlobal saveException = new ExceptionGlobal(e);
             }
         }
     }

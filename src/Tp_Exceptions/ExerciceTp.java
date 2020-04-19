@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-import static Tp_Exceptions.SerializationExample.*;
+import static Tp_Exceptions.SerializationGlobal.*;
 
 public class ExerciceTp {
     public static void main(String[] args) throws InterruptedException {
